@@ -1,14 +1,25 @@
-//This script lets you change time scale during training. It is not a required script for this demo to function
-
 using UnityEngine;
+using TMPro;
 
 namespace MLAgentsExamples
 {
     public class AdjustTrainingTimescale : MonoBehaviour
     {
-        // Update is called once per frame
+        public TextMeshProUGUI timerText;  // 経過時間表示用
+        private float elapsedTime = 0f;    // 経過時間
+
         void Update()
         {
+            // 経過時間更新
+            elapsedTime += Time.deltaTime;
+
+            // 経過時間を右下に表示
+            if (timerText != null)
+            {
+                timerText.text = $"Time: {elapsedTime:F2}";
+            }
+
+            // ---- TimeScale 調整 ----
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
                 Time.timeScale = 1f;
