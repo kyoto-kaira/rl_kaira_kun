@@ -2144,6 +2144,7 @@ GameObject:
   - component: {fileID: 4845971000566026488}
   - component: {fileID: 4845971000566026490}
   - component: {fileID: 4845971000566026491}
+  - component: {fileID: 6171994963488039603}
   m_Layer: 0
   m_Name: leg2
   m_TagString: agent
@@ -2337,6 +2338,19 @@ MonoBehaviour:
   penalizeGroundContact: 0
   groundContactPenalty: 0
   touchingGround: 0
+--- !u!114 &6171994963488039603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845971000566026489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7131d90263f44cd449b28a3f5a775d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 4845971001715176649}
 --- !u!1 &4845971000697267374
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,6 +2623,7 @@ GameObject:
   - component: {fileID: 4845971000943818053}
   - component: {fileID: 4845971000943818055}
   - component: {fileID: 4845971000943818052}
+  - component: {fileID: 879405064291688547}
   m_Layer: 0
   m_Name: leg3
   m_TagString: agent
@@ -2802,6 +2817,19 @@ MonoBehaviour:
   penalizeGroundContact: 0
   groundContactPenalty: 0
   touchingGround: 0
+--- !u!114 &879405064291688547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845971000943818050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7131d90263f44cd449b28a3f5a775d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 4845971001715176649}
 --- !u!1 &4845971001308907664
 GameObject:
   m_ObjectHideFlags: 0
@@ -2901,6 +2929,7 @@ GameObject:
   - component: {fileID: 4845971001588102147}
   - component: {fileID: 4845971001588102145}
   - component: {fileID: 8095257696636675266}
+  - component: {fileID: 6910440986889221104}
   m_Layer: 0
   m_Name: Body
   m_TagString: agent
@@ -3030,6 +3059,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 5394206456896767876, guid: 51d53ae0c3e7b4cfaa4e85055092edd3, type: 3}
+--- !u!114 &6910440986889221104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845971001588102158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7131d90263f44cd449b28a3f5a775d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 4845971001715176649}
 --- !u!1 &4845971001715176661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3047,7 +3089,7 @@ GameObject:
   - component: {fileID: 8968436865147081600}
   m_Layer: 0
   m_Name: Crawler
-  m_TagString: Untagged
+  m_TagString: agent
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
